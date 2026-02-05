@@ -6,9 +6,19 @@ public class Server {
     private socket clientSocket;
     private int porta;
 
+    serverSocket = new ServerSocket;
+
+
     Server(int porta, serverSocket serverSocket, socket clientSocket){
         this.porta=porta;
     }
 
-    int connetti()
+    int connetti(){
+        try {
+            socket = serverSocket.accept;
+        }catch (IOException e){
+            return null;
+
+        }
+    }
 }
